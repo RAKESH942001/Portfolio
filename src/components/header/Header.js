@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import Tabs from './Tabs';
+import Tabs from './tabs/Tabs';
 
 const Header = (context) =>
 	<div className="container">

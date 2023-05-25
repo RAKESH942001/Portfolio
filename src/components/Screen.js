@@ -1,6 +1,6 @@
 import React from 'react';
 import NameAndDetails from './NameAndDetails';
-import Header from './Header';
+import Header from './header/Header';
 
 const Screen = (context) =>
 	<div>
