@@ -1,9 +1,10 @@
 import { React } from 'react';
 import './App.scss';
+import Screen from './components/Screen';
 
-const App = () =>
+const App = (context) =>
 	<div className="App">
-		Ready to start.
+		<Screen { ...context }/>
 	</div>;
 
 export default App;
