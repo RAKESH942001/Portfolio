@@ -49,6 +49,52 @@
 	font-size: 25px;
 }
 
+.aboutTabs {
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.tabLinks {
+	position: relative;
+	cursor: pointer;
+}
+
+.tabLinks::after {
+	content: '';
+	width: 0;
+	height: 3px;
+	background-color: #ff004f;
+	position: absolute;
+	left: 0;
+	top: 24px;
+	transition: 0.5s;
+}
+
+.tabLinks.activeLink::after {
+	width: 50%;
+}
+
+.tabContents li {
+	list-style: none;
+	font-size: 18px;
+	color: white;
+	margin: 3px 164px;
+}
+
+.tabContents li span {
+	color: #b54769;
+	font-size: 24px;
+}
+
+.tabContents {
+	display: none;
+}
+
+.tabContents.activeTab {
+display: block;
+}
+
 .name {
 	margin-top: 15%;
 	margin-left: 3%;
