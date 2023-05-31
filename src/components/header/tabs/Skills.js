@@ -1,22 +1,22 @@
-import { Box } from '@mui/material';
 import React from 'react';
 
 const Skills = (context) => {
 	const { state: { tabSkill }} = context;
-	const flag = tabSkill ? 'block' : 'none';
+	const flag = tabSkill ? 'inline-block' : 'none';
 
 	return (
-		<Box
-			className="tabContents"
-			sx={ {
+		<div
+			className="tabContents "
+			style={ {
 				display: flag,
 			} }
 		>
-			<li><span>React Developer</span>
-				<br/>Designs and creates Js based applications for web</li>
-			<li><span>Front-End Developer</span>
-				<br/>Creates websites and applications using web</li>
-		</Box>
+			<span className="listHeader">React Developer</span>
+			<div>Designs and creates Js based
+				applications for web</div><br/>
+			<span className="listHeader">Front-End Developer</span>
+			<div>Creates websites and applications using web</div>
+		</div>
 	);
 };
 

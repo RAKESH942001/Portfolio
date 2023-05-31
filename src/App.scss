@@ -71,28 +71,17 @@
 	transition: 0.5s;
 }
 
-.tabLinks.activeLink::after {
+.tabLinks.activeLink:hover::after {
 	width: 50%;
 }
 
-.tabContents li {
-	list-style: none;
-	font-size: 18px;
-	color: white;
-	margin: 3px 164px;
-}
-
-.tabContents li span {
+.listHeader {
 	color: #b54769;
-	font-size: 24px;
 }
 
 .tabContents {
 	display: none;
-}
-
-.tabContents.activeTab {
-display: block;
+	font-size: 18px;
 }
 
 .name {
@@ -102,7 +91,6 @@ display: block;
 	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
 }
-
 
 .tabs {
 	display: flex;

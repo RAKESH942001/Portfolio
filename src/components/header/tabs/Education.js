@@ -1,12 +1,22 @@
 import React from 'react';
 
-const Educations = () =>
-	<div className="tabContents">
-		<li><span> 2022-Current</span>
-			<br/>FrontEnd  Developer Training at Clear</li>
-		<li><span>2019-2022</span>
-			<br/>Bsc from Fighter Wings Aviation College</li>
-		<li/>
-	</div>;
+const Educations = (context) => {
+	const { state: { tabEducation }} = context;
+	const flag = tabEducation ? 'inline-block' : 'none';
+
+	return (
+		<div
+			className="tabContents"
+			style={ {
+				display: flag,
+			} }
+		>
+			<span className="listHeader"> 2022-Current</span>
+			<div>FrontEnd  Developer Training at Clear</div><br/>
+			<span className="listHeader">2019-2022</span>
+			<div>Bsc from Fighter Wings Aviation College</div>
+		</div>
+	);
+};
 
 export default Educations;

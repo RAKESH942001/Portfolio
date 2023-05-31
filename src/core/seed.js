@@ -1,5 +1,6 @@
 const seed = {
-	tabSkill: false,
+	tabSkill: true,
+	tabEducation: false,
 };
 
 export default seed;
