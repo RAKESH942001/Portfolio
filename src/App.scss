@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,900;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono:ital@1&family=Roboto:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .App {
 	width: 100%;
 	height: 100vh;
 	color: #fff;
 	background-image: url('../public/img/background.png');
+	font-family: 'Poppins', sans-serif;
+	background-repeat: no-repeat;
 }
 
 .container {
@@ -118,4 +119,72 @@
 
 .tabs a:hover::after {
 	width: 100%;
+}
+
+.subTitle {
+	font-size: 60px;
+	font-weight: 600;
+	padding: 10px 10%;
+}
+
+.portfolio {
+	padding: 50px 0;
+}
+
+.workList>img {
+	border-radius: 10px;
+}
+
+.workList {
+	width: 500px;
+	position: relative;
+	margin-top: 50px;
+	left: 40%;
+}
+.workList:hover>img {
+	transform: scale(1.1);
+}
+
+.workList:hover>.layer {
+	height: 350px;
+}
+
+.layer {
+	width: 500px;
+	height: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+	border-radius: 10px;
+	position: absolute;
+	left: -25px;
+	bottom: -9px;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	transition: height 0.5s;
+}
+
+.layer h3 {
+	font-weight: 900;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.layer a {
+	margin-top: 20px;
+	color: #ff004f;
+	text-decoration: none;
+	line-height: 60px;
+	background: #fff;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+
 }
