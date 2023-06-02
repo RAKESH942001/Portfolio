@@ -3,7 +3,7 @@ import AboutTabs from './AboutTabs';
 
 const AboutContent = (context) =>
 	<div className="aboutContent">
-		About Me
+		<h1 className="subTitle">About Me</h1>
 		<p>My name is Rakesh, and I enjoy promoting small companies to help them
 			increase their profits.I am excited about the opportunity to be part
 			of a team. I have a strong background in JavaScript,HTML5,CSS
