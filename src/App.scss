@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .App {
-	width: 100%;
+	width: 80%;
+	padding: 10px 10%;
 	height: 100vh;
 	color: #fff;
 	background-image: url('../public/img/background.png');
@@ -10,8 +11,8 @@
 }
 
 .container {
-	padding: 10px 10%;
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
@@ -22,7 +23,7 @@
 }
 
 .about {
-	margin-top: 25%;
+	margin-top: 40%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -87,7 +88,6 @@
 
 .name {
 	margin-top: 15%;
-	margin-left: 3%;
 	color: white;
 	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
@@ -124,12 +124,9 @@
 .subTitle {
 	font-size: 60px;
 	font-weight: 600;
-	padding: 10px 10%;
 }
 
-.portfolio {
-	padding: 50px 0;
-}
+
 
 .workList>img {
 	border-radius: 10px;
@@ -139,7 +136,7 @@
 	width: 500px;
 	position: relative;
 	margin-top: 50px;
-	left: 40%;
+	left: 25%;
 }
 .workList:hover>img {
 	transform: scale(1.1);
