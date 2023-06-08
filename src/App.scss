@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .App {
-	width: 80%;
-	padding: 10px 10%;
+	width: 90%;
+	padding: 10px 5%;
 	height: 100vh;
 	color: #fff;
 	background-image: url('../public/img/background.png');
@@ -138,6 +138,7 @@
 	margin-top: 50px;
 	left: 25%;
 }
+
 .workList:hover>img {
 	transform: scale(1.1);
 }
@@ -184,4 +185,80 @@
 	border-radius: 50%;
 	text-align: center;
 
+}
+
+.contactDetails {
+	display: flex;
+}
+
+.contactLeft {
+	flex-basis: 40%;
+}
+
+.contactLeft p {
+	margin-top: 35px;
+}
+
+.contactRight {
+	flex-basis: 60%;
+}
+
+.contactLeft p a {
+	color: #ff004f;
+}
+
+.socialIcon {
+	margin-top: 30px;
+}
+
+.socialIcon a {
+	font-size: 30px;
+	margin-right: 15px;
+	color: #ababab;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+.socialIcon a :hover {
+	color: #ff004f;
+	transform: translateY(-5px);
+}
+
+.btn {
+	display: block;
+	width: fit-content;
+	padding: 14px 50px;
+	margin: 50px auto;
+	border-radius: 6px;
+	text-decoration: none;
+	background-color: black;
+	color: #fff;
+	border: 1px solid #ff004f;
+	transition: background 0.5s;
+}
+
+.btn:hover {
+	background: #ff004f;
+}
+
+.btn2 {
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+}
+
+.contactRight form {
+	width: 100%;
+}
+
+form input,
+form textarea {
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+	background: #262622;
+	padding: 15px;
+	margin: 15px 0;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 6px;
 }
