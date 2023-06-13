@@ -3,7 +3,7 @@ import React from 'react';
 
 const NameAndDetails = () =>
 	<div className="name">
-		<h1>Hi,I'm <div className="nameColor"> Rakesh NL</div>
+		<h1>Hi,I'm <div className="nameColor"> Rakesh</div>
 			<br/>Front-End Engineer
 		</h1>
 	</div>;
