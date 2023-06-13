@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .App {
-	width: 90%;
-	padding: 10px 5%;
-	height: 100vh;
-	color: #fff;
+	width: 100%;
+}
+
+#backgroundImage {
 	background-image: url('../public/img/background.png');
-	font-family: 'Poppins', sans-serif;
-	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
 }
 
 .container {
+	padding: 10px 6%;
+}
+
+.header {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
@@ -95,6 +100,7 @@
 
 .tabs {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 2rem;
 }
 
@@ -261,4 +267,59 @@ form textarea {
 	color: #fff;
 	font-size: 18px;
 	border-radius: 6px;
+}
+
+.closeIcon {
+	display: none;
+}
+
+.menuIcon {
+	display: none;
+}
+
+@media screen and (max-width:600px) {
+	#backgroundImage {
+		background-image: url('../public/img/phoneBackground.png');
+	}
+
+	.name {
+		margin-top: 73%;
+		font-size: 18px;
+	}
+
+	.menuIcon {
+		display: block;
+		font-size: 25px;
+	}
+
+	.closeIcon {
+		display: block;
+		font-size: 25px;
+		position: relative;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+
+	.tabs {
+		display: none;
+	}
+	// .tabs {
+	// 	background: #ff004f;
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 225px;
+	// 	justify-content: center;
+	// 	display: block;
+	// 	padding-top: 58px;
+	// 	z-index: 2;
+	// 	width: 150px;
+	// 	height: 100vh;
+	// 	transition:right 0.5s ;
+	// }
+
+	// .tabs a {
+	// 	display: block;
+	// 	margin: 25px;
+	// }
 }
