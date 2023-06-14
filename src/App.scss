@@ -284,14 +284,19 @@ form textarea {
 	left: 225px;
 	justify-content: center;
 	display: block;
+	transition: all .5s ease;
 	padding-top: 58px;
 	z-index: 2;
 	width: 150px;
 	height: 100vh;
-	transition: right 5s;
 }
 
 .drawerTab .tab {
+	display: block;
+	line-height: 40px;
+	padding-left: 0;
+	box-sizing: border-box;
+	border-top: 1px solid rgb(16 9 9 / 10%);
 	margin: 20px;
 	font-size: 24px;
 }
