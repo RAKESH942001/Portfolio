@@ -104,7 +104,7 @@
 	gap: 2rem;
 }
 
-.tabs a {
+.tab a {
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
@@ -112,7 +112,7 @@
 
 }
 
-.tabs a::after {
+.tab a::after {
 	content: '';
 	width: 0;
 	height: 3px;
@@ -123,7 +123,7 @@
 	transition: 0.5s;
 }
 
-.tabs a:hover::after {
+.tab a:hover::after {
 	width: 100%;
 }
 
@@ -277,6 +277,25 @@ form textarea {
 	display: none;
 }
 
+.drawerTab {
+	background: #ff004f;
+	position: fixed;
+	top: 0;
+	left: 225px;
+	justify-content: center;
+	display: block;
+	padding-top: 58px;
+	z-index: 2;
+	width: 150px;
+	height: 100vh;
+	transition: right 5s;
+}
+
+.drawerTab .tab {
+	margin: 20px;
+	font-size: 24px;
+}
+
 @media screen and (max-width:600px) {
 	#backgroundImage {
 		background-image: url('../public/img/phoneBackground.png');
@@ -304,22 +323,5 @@ form textarea {
 	.tabs {
 		display: none;
 	}
-	// .tabs {
-	// 	background: #ff004f;
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 225px;
-	// 	justify-content: center;
-	// 	display: block;
-	// 	padding-top: 58px;
-	// 	z-index: 2;
-	// 	width: 150px;
-	// 	height: 100vh;
-	// 	transition:right 0.5s ;
-	// }
 
-	// .tabs a {
-	// 	display: block;
-	// 	margin: 25px;
-	// }
 }
