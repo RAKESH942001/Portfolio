@@ -62,32 +62,13 @@
 	justify-content: space-evenly;
 }
 
-.tabLinks {
-	position: relative;
-	cursor: pointer;
-}
-
-.tabLinks::after {
-	content: '';
-	width: 0;
-	height: 3px;
-	background-color: #ff004f;
-	position: absolute;
-	left: 0;
-	top: 24px;
-	transition: 0.5s;
-}
-
-.tabLinks.activeLink:hover::after {
-	width: 50%;
-}
 
 .listHeader {
 	color: #b54769;
 }
 
 .tabContents {
-	display: none;
+
 	font-size: 18px;
 }
 
@@ -284,7 +265,7 @@ form textarea {
 	left: 225px;
 	justify-content: center;
 	display: block;
-	transition: all .5s ease;
+	transition: left .5s;
 	padding-top: 58px;
 	z-index: 2;
 	width: 150px;
@@ -307,7 +288,7 @@ form textarea {
 	}
 
 	.name {
-		margin-top: 73%;
+		margin-top: 95%;
 		font-size: 18px;
 	}
 
@@ -328,5 +309,17 @@ form textarea {
 	.tabs {
 		display: none;
 	}
+
+	.subTitle {
+		font-size: 45px;
+	}
+.aboutContent,.aboutImg {
+	flex-basis: 100%;
+}
+
+.aboutContent p {
+font-size: 18px;
+
+}
 
 }

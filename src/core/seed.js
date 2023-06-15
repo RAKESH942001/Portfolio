@@ -1,6 +1,5 @@
 const seed = {
-	tabSkill: true,
-	tabEducation: false,
+	tab: 'skills',
 	drawerOpen: false,
 };
 
