@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .App {
-	width: 100%;
+	width: 98vw;
 }
 
 #backgroundImage {
 	background-image: url('../public/img/background.png');
 	height: 100vh;
+	padding-top: 1%;
 	background-size: cover;
 	background-position: center;
 }
@@ -22,13 +23,14 @@
 	flex-wrap: wrap;
 }
 
+
 .nameColor {
 	display: inline-block;
 	color: #ff004f
 }
 
 .about {
-	margin-top: 40%;
+	margin-top: 14%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
@@ -56,27 +58,22 @@
 	font-size: 25px;
 }
 
-.aboutTabs {
-	color: white;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-
 .listHeader {
 	color: #b54769;
 }
 
 .tabContents {
-
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .name {
-	margin-top: 15%;
 	color: white;
 	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
+}
+
+.nameAndDetails {
+	margin-top: 30%;
 }
 
 .tabs {
@@ -113,17 +110,16 @@
 	font-weight: 600;
 }
 
-
-
 .workList>img {
 	border-radius: 10px;
+	width: 100%;
+	height: 100%;
 }
 
 .workList {
-	width: 500px;
+	width: 40%;
+	height: 44%;
 	position: relative;
-	margin-top: 50px;
-	left: 25%;
 }
 
 .workList:hover>img {
@@ -131,47 +127,46 @@
 }
 
 .workList:hover>.layer {
-	height: 350px;
+	height: 120%;
 }
 
 .layer {
-	width: 500px;
+	width: 100%;
 	height: 0;
 	background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
 	border-radius: 10px;
 	position: absolute;
-	left: -25px;
-	bottom: -9px;
+	bottom: -20px;
+	left: -35px;
 	display: flex;
 	overflow: hidden;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 40px;
-	font-size: 14px;
+	font-size: 22px;
 	text-align: center;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	transition: height 0.5s;
 }
 
 .layer h3 {
-	font-weight: 900;
-	font-size: 25px;
-	margin-bottom: 20px;
+	font-size: 22px;
+	margin-bottom: 5px;
 }
 
+.layer p {}
+
 .layer a {
-	margin-top: 20px;
 	color: #ff004f;
 	text-decoration: none;
 	line-height: 60px;
 	background: #fff;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	text-align: center;
-
 }
 
 .contactDetails {
@@ -190,16 +185,19 @@
 	flex-basis: 60%;
 }
 
-.contactLeft p a {
-	color: #ff004f;
-}
 
 .socialIcon {
 	margin-top: 30px;
 }
 
+.icons {
+	display: flex;
+	padding-top: 40px;
+}
+
 .socialIcon a {
-	font-size: 30px;
+	font-size: 35px;
+	width: 5%;
 	margin-right: 15px;
 	color: #ababab;
 	display: inline-block;
@@ -212,25 +210,20 @@
 }
 
 .btn {
-	display: block;
+	width: -moz-fit-content;
 	width: fit-content;
 	padding: 14px 50px;
 	margin: 50px auto;
 	border-radius: 6px;
 	text-decoration: none;
-	background-color: black;
+	background-color: #b54769;
 	color: #fff;
-	border: 1px solid #ff004f;
-	transition: background 0.5s;
-}
+	border: 1px solid #fff;
 
-.btn:hover {
-	background: #ff004f;
 }
 
 .btn2 {
 	font-family: 'Poppins', sans-serif;
-	display: inline-block;
 }
 
 .contactRight form {
@@ -272,6 +265,11 @@ form textarea {
 	height: 100vh;
 }
 
+.portfolio {
+	width: 100%;
+	height: 100%;
+}
+
 .drawerTab .tab {
 	display: block;
 	line-height: 40px;
@@ -288,13 +286,16 @@ form textarea {
 	}
 
 	.name {
-		margin-top: 95%;
 		font-size: 18px;
 	}
 
 	.menuIcon {
 		display: block;
 		font-size: 25px;
+	}
+
+	.nameAndDetails {
+		margin-top: 40%;
 	}
 
 	.closeIcon {
@@ -313,13 +314,35 @@ form textarea {
 	.subTitle {
 		font-size: 45px;
 	}
-.aboutContent,.aboutImg {
-	flex-basis: 100%;
-}
 
-.aboutContent p {
-font-size: 18px;
+	.tabContents {
+		font-size: 17px;
+	}
 
-}
+	.aboutContent,
+	.aboutImg {
+		flex-basis: 100%;
+	}
 
+	.aboutContent p {
+		font-size: 18px;
+
+	}
+
+	.workList {
+		width: 80%;
+	}
+
+	.layer {
+		font-size: 12px;
+	}
+
+	.layer a {
+		width: 58px;
+		height: 58px;
+	}
+
+	.contactDetails {
+		flex-flow: column-reverse;
+	}
 }
