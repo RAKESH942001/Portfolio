@@ -6,7 +6,7 @@ const Logo = ({ config: { logo }}) =>
 		<img
 			src={ logo }
 			alt="images"
-			width="150px"
+			width="250px"
 		/>
 	</Box>
 	;

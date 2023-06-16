@@ -21,6 +21,8 @@ const AboutTabs = (context) => {
 							key={ key }
 							sx={ {
 								color: 'white',
+								fontFamily: 'monospace',
+								fontSize: '20px',
 							} }
 							label={ data }
 							value={ data }
@@ -42,23 +44,5 @@ const AboutTabs = (context) => {
 			</div>
 		</TabContext>);
 };
-// }
-
-// return <div className="aboutTabs">
-// 	<div>
-// 		<p
-// 			onClick={ () => setState({ ...state, tabSkill: !tabSkill,
-// 				tabEducation: false }) }
-// 		>Skills</p>
-// 		<Skills { ...context }/>
-// 	</div>
-// 	<div>
-// 		<p
-// 			onClick={ () => setState({ ...state,
-// 				tabEducation: !tabEducation, tabSkill: false }) }
-// 		>Education</p>
-// 		<Educations { ...context }/>
-// 	</div>
-// </div>;
 
 export default AboutTabs;
