@@ -8,10 +8,10 @@ const Tabs = (context) => {
 		<div
 			className={ drawerOpen ? 'drawerTab' : 'tabs' }
 		>
-			<div className="tab">	<a href="#">Home</a> </div>
-			<div className="tab"><a href="#">About</a></div>
-			<div className="tab"><a href="#">Portfolio</a></div>
-			<div className="tab"><a href="#">Contact</a></div>
+			<div className="tab">	<a href="#pageHeader">Home</a> </div>
+			<div className="tab"><a href="#about">About</a></div>
+			<div className="tab"><a href="#portfolio">Portfolio</a></div>
+			<div className="tab"><a href="#contact">Contact</a></div>
 			<CloseIcons { ...context }/>
 		</div>
 	);

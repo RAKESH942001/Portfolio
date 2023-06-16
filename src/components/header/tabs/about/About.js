@@ -3,7 +3,7 @@ import AboutImg from './AboutImg';
 import AboutContent from './AboutContent';
 
 const About = (context) =>
-	<div className="about">
+	<div id="about" className="about">
 		<AboutImg { ...context }/>
 		<AboutContent { ...context }/>
 	</div>;

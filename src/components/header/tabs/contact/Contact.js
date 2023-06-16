@@ -3,7 +3,7 @@ import ContactLeft from './ContactLeft';
 import ContactRight from './ContactRight';
 
 const Contact = (context) =>
-	<div className="contact">
+	<div id="contact" className="contact">
 		<h1 className="subTitle">Contact</h1>
 		<div className="contactDetails">
 			<ContactLeft { ...context }/>

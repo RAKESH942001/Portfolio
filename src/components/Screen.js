@@ -5,7 +5,7 @@ import Portfolio from './header/tabs/portFolio/Portfolio';
 import Contact from './header/tabs/contact/Contact';
 import Header from './header/Header';
 const Screen = (context) =>
-	<div id="backgroundImage" className="container">
+	<div id="pageHeader" className="container">
 		<Header { ...context }/>
 		<NameAndDetails { ...context }/>
 		<About { ...context }/>
